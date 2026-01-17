@@ -5,21 +5,21 @@
 class Ghofig < Formula
   desc "A TUI-based CLI tool for browsing and managing Ghostty terminal configuration"
   homepage "https://github.com/intaek-h/ghofig"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/intaek-h/ghofig/releases/download/v0.1.1/ghofig_0.1.1_darwin_amd64.tar.gz"
-      sha256 "2e5130bde2d4e0a1ceb2d836a6f10a30a02ca803d051332ca9a8f26d8f7c2575"
+      url "https://github.com/intaek-h/ghofig/releases/download/v0.1.2/ghofig_0.1.2_darwin_amd64.tar.gz"
+      sha256 "99385698318b65ca3494b4bc91da441153fbd7e5f22e9f7430dddddebf481fe5"
 
       def install
         bin.install "ghofig"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/intaek-h/ghofig/releases/download/v0.1.1/ghofig_0.1.1_darwin_arm64.tar.gz"
-      sha256 "ed1be738eeefb2b088e3035e57e087706fa256f6e296e42c8c546bdccee0674d"
+      url "https://github.com/intaek-h/ghofig/releases/download/v0.1.2/ghofig_0.1.2_darwin_arm64.tar.gz"
+      sha256 "6b9de708771025794e63c6df5de97c40bba0ef6147dc3ba2b1d226aaab1b2a8b"
 
       def install
         bin.install "ghofig"
@@ -29,15 +29,15 @@ class Ghofig < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/intaek-h/ghofig/releases/download/v0.1.1/ghofig_0.1.1_linux_amd64.tar.gz"
-      sha256 "c798ae3f0ca27d9c94586365ae06aae828938c17aba2ef1a8a9ae308c9a7f1bf"
+      url "https://github.com/intaek-h/ghofig/releases/download/v0.1.2/ghofig_0.1.2_linux_amd64.tar.gz"
+      sha256 "32206cab4c1cffcbdc53644bfc823633b83432e77d5b67775d8c7a3f0e22043a"
       def install
         bin.install "ghofig"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/intaek-h/ghofig/releases/download/v0.1.1/ghofig_0.1.1_linux_arm64.tar.gz"
-      sha256 "0a42646a5fb765162edb1f98a53eddbf0128fcf30d5f6d5b07f7bed90dd3d5b2"
+      url "https://github.com/intaek-h/ghofig/releases/download/v0.1.2/ghofig_0.1.2_linux_arm64.tar.gz"
+      sha256 "885a06b59ce0acca34e6af29a541e147b501345eafaabcd12712041c6462132e"
       def install
         bin.install "ghofig"
       end
